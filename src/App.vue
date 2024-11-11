@@ -1,27 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <PostList></PostList>
+  <!-- <ModelForm></ModelForm> -->
+  <!-- <StyleBind></StyleBind> -->
+  <!-- <ClassBind></ClassBind> -->
+  <!-- <DirectivaBucle></DirectivaBucle> -->
+  <!-- <DirectivaCondicional></DirectivaCondicional> -->
+  <!-- <CounterComposition></CounterComposition> -->
+  <!-- <CounterOption></CounterOption> -->
+  <!-- <h1>Listado de Post</h1>
+  <PostContainer></PostContainer> -->
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+<script lang="ts" setup>
+  import PostList from './components/PostList.vue';
+  /* import ModelForm from './components/ModelForm.vue'; */
+  /* import StyleBind from './components/StyleBind.vue'; */
+  /* import ClassBind from './components/ClassBind.vue' */
+  /* import DirectivaBucle from './components/DirectivaBucle.vue'; */
+  // import DirectivaCondicional from './components/DirectivaCondicional.vue';
+  // import CounterComposition from './components/CounterComposition.vue'; 
+  // import CounterOption from './components/CounterOption.vue';
+  // import PostContainer from './components/PostContainer.vue';
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style >
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
 </style>
