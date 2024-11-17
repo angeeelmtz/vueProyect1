@@ -10,13 +10,13 @@
     <button @click="handleClick">Cambiar color</button>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
     //Setup CompositionAPI
-    import { ref } from 'vue';
+    /* import { ref } from 'vue';
     let c = ref('#fff')
-    const handleClick = () => c.value = '#0f0'
+    const handleClick = () => c.value = '#0f0' */
 
-    /* CompositionAPI
+    /* CompositionAPI */
     import { defineComponent, ref } from 'vue';
     export default defineComponent({
         name: 'StyleBind',
@@ -25,7 +25,7 @@
             const handleClick = () => c.value = "#0f0"
             return {c, handleClick}
         }
-    }) */
+    })
 
    /* OptionAPI
    import { defineComponent} from 'vue';

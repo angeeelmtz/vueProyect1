@@ -7,8 +7,19 @@
     </div>
 </template>
 
-<script>
-    import { defineComponent, ref } from 'vue';
+<script >
+    import { defineComponent, defineProps, defineEmits, ref } from 'vue';
+    /* import { defineProps, defineEmits, ref } from 'vue';
+    const props = defineProps({
+        title: String,
+        content: String
+    })
+
+    const emit = defineEmits('saludar')
+
+    let message = ref('')
+    const handleClick = () => emit("saludar", message.value) */
+    
     export default defineComponent({
         name: "PostDetail",
         props:{
